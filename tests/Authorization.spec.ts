@@ -19,7 +19,6 @@ test.describe("Authorization", () => {
     await page.getByRole("link", { name: `${name}` }).click();
     await expect(page.locator('//*[@data-qa-id="follow-toggle"]')).toBeVisible();
     await expect(page.locator('//*[@data-qa-id="profile-username"]')).toBeVisible();
-    // await expect(page).toHaveURL(/'/);
   });
 
   test("Sigh In", async ({ page }) => {
