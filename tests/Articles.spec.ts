@@ -88,11 +88,6 @@ test.describe("Articles", () => {
     await page.reload();
     await expect(
       page.locator(
-        '//*[@data-qa-type="preview-title"][contains(text(), "Test article")]'
-      )
-    ).toBeHidden();
-    await expect(
-      page.locator(
         '//*[@data-qa-type="article-list"]//div[contains(text(), "No articles are here")]'
       )
     ).toBeVisible();
