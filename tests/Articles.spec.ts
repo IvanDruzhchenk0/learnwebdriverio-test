@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-//import { createName, createEmail } from "../helpers/createName";
+import { createName, createEmail } from "../helpers/createName";
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
