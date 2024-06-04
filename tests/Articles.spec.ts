@@ -6,8 +6,8 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe("Articles", () => {
-  const email = "gfhhdgg424@yte.com";
-  const name = "34hhgh";
+  const email = createEmail("gmail.com");
+  const name = createName();
 
   const emailField = 'input[placeholder="Email"]';
   const passwordField = 'input[placeholder="Password"]';
